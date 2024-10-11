@@ -51,7 +51,7 @@ const Login = () => {
                 <button className="btn btn-primary">Login</button>
               </div>
             </form>
-            <p className="text-center mt-4 font-display font-bold">Do not have an account? please <Link className="text-blue-800" to='/register'>Register</Link></p>
+            <p className="text-center mt-4 font-display font-bold">Do not have an account? please <Link className="text-blue-800 font-extrabold" to='/register'>Register</Link></p>
     </div>
   );
 };
