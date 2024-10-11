@@ -10,8 +10,7 @@ const Login = () => {
 
         console.log(e.currentTarget);
         const form = new FormData(e.currentTarget);
-        console.log(form.get('email'));
-        
+        console.log(form);
     }
 
   return (
@@ -52,7 +51,7 @@ const Login = () => {
                 <button className="btn btn-primary">Login</button>
               </div>
             </form>
-            <p>Do not have an accout? please <Link to='/register'>Register</Link></p>
+            <p className="text-center mt-4 font-display font-bold">Do not have an account? please <Link className="text-blue-800" to='/register'>Register</Link></p>
     </div>
   );
 };
