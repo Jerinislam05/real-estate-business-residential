@@ -1,0 +1,130 @@
+{
+  "estates": [
+    {
+      "id": "1",
+      "estate_title": "Luxurious Family Home",
+      "segment_name": "Residential",
+      "description": "A beautiful family home located in a quiet neighborhood with modern amenities.",
+      "price": "$850,000",
+      "status": "sale",
+      "area": "2,500 sq ft",
+      "location": "123 Maple Drive, Springfield",
+      "facilities": [
+        "living room",
+        "swimming pool",
+        "kitchen",
+        "garage",
+        "garden"
+      ],
+      "image": "https://example.com/images/luxury-family-home.jpg",
+      "view_property_button": "View Property"
+    },
+    {
+      "id": "2",
+      "estate_title": "Cozy Apartment",
+      "segment_name": "Residential",
+      "description": "A modern apartment located in the city center, perfect for young professionals.",
+      "price": "$450,000",
+      "status": "sale",
+      "area": "1,200 sq ft",
+      "location": "456 Elm Street, Springfield",
+      "facilities": ["living room", "gym", "kitchen", "balcony"],
+      "image": "https://example.com/images/cozy-apartment.jpg",
+      "view_property_button": "View Property"
+    },
+    {
+      "id": "3",
+      "estate_title": "Spacious Townhouse",
+      "segment_name": "Residential",
+      "description": "A spacious townhouse featuring an open floor plan and close to parks.",
+      "price": "$650,000",
+      "status": "rent",
+      "area": "1,800 sq ft",
+      "location": "789 Oak Lane, Springfield",
+      "facilities": ["living room", "kitchen", "patio", "office space"],
+      "image": "https://example.com/images/spacious-townhouse.jpg",
+      "view_property_button": "View Property"
+    },
+    {
+      "id": "4",
+      "estate_title": "Charming Cottage",
+      "segment_name": "Residential",
+      "description": "A charming cottage nestled in the countryside with stunning views.",
+      "price": "$325,000",
+      "status": "sale",
+      "area": "1,000 sq ft",
+      "location": "321 Pine Road, Springfield",
+      "facilities": ["living room", "kitchen", "fireplace", "backyard"],
+      "image": "https://example.com/images/charming-cottage.jpg",
+      "view_property_button": "View Property"
+    },
+    {
+      "id": "5",
+      "estate_title": "Modern Villa",
+      "segment_name": "Residential",
+      "description": "A luxurious villa with state-of-the-art design and amenities.",
+      "price": "$1,500,000",
+      "status": "sale",
+      "area": "4,000 sq ft",
+      "location": "654 Willow Way, Springfield",
+      "facilities": [
+        "living room",
+        "swimming pool",
+        "home theater",
+        "gym",
+        "kitchen"
+      ],
+      "image": "https://example.com/images/modern-villa.jpg",
+      "view_property_button": "View Property"
+    },
+    {
+      "id": "6",
+      "estate_title": "Stylish Loft",
+      "segment_name": "Residential",
+      "description": "An urban loft featuring high ceilings and contemporary finishes.",
+      "price": "$600,000",
+      "status": "rent",
+      "area": "1,500 sq ft",
+      "location": "222 Birch Avenue, Springfield",
+      "facilities": [
+        "living room",
+        "kitchen",
+        "laundry room",
+        "rooftop terrace"
+      ],
+      "image": "https://example.com/images/stylish-loft.jpg",
+      "view_property_button": "View Property"
+    },
+    {
+      "id": "7",
+      "estate_title": "Elegant Bungalow",
+      "segment_name": "Residential",
+      "description": "A charming bungalow with vintage touches and a cozy ambiance.",
+      "price": "$425,000",
+      "status": "sale",
+      "area": "1,200 sq ft",
+      "location": "888 Cedar Street, Springfield",
+      "facilities": ["living room", "kitchen", "dining area", "porch"],
+      "image": "https://example.com/images/elegant-bungalow.jpg",
+      "view_property_button": "View Property"
+    },
+    {
+      "id": "8",
+      "estate_title": "Luxury Penthouse",
+      "segment_name": "Residential",
+      "description": "A stunning penthouse with panoramic views of the skyline and luxury finishes.",
+      "price": "$2,000,000",
+      "status": "sale",
+      "area": "3,500 sq ft",
+      "location": "777 Skyview Lane, Springfield",
+      "facilities": [
+        "living room",
+        "swimming pool",
+        "home office",
+        "rooftop garden"
+      ],
+      "image": "https://example.com/images/luxury-penthouse.jpg",
+      "view_property_button": "View Property"
+    }
+  ]
+}
