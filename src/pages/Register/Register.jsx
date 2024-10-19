@@ -1,9 +1,8 @@
 import { Link, useNavigate } from "react-router-dom";
 import { auth } from "../../firebase/firebase.config";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Navbar from "../../shared/Navbar";
 import { useState } from "react";
 
 const Register = () => {
@@ -23,9 +22,16 @@ const Register = () => {
         }
 
         try {
-            await createUserWithEmailAndPassword(auth, email, password);
-            toast.success("Registration successful!"); 
-            navigate("/login");
+            const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+            const user = userCredential.user;
+
+            if (user) {
+                await updateProfile(user, {
+                    photoURL: photoURL
+                });
+            }
+            toast.success("Registration successful!");
+            navigate("/");
         } catch (error) {
             console.error("Registration Error:", error);
             toast.error("Failed to register: " + error.message);
@@ -50,7 +56,6 @@ const Register = () => {
 
     return (
         <div>
-            <Navbar />
             <h2 className="text-3xl my-10 font-display font-bold text-center">Please Register</h2>
             <form onSubmit={handleRegister} className="md:w-3/4 lg:w-1/2 mx-auto card-body">
                 <div className="form-control">

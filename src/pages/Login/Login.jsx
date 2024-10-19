@@ -7,7 +7,6 @@ import {
 import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Navbar from "../../shared/Navbar";
 import { useState } from "react";
 
 const Login = () => {
@@ -63,7 +62,6 @@ const Login = () => {
 
   return (
     <div>
-      <Navbar />
       <h2 className="text-3xl my-10 font-display font-bold text-center">
         Please Login
       </h2>

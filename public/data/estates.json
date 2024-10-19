@@ -1,5 +1,4 @@
-{
-  "estates": [
+[
     {
       "id": "1",
       "estate_title": "Luxurious Family Home",
@@ -16,7 +15,7 @@
         "garage",
         "garden"
       ],
-      "image": "https://example.com/images/luxury-family-home.jpg",
+      "image": "https://i.ibb.co.com/M291RsD/luxurious.jpg",
       "view_property_button": "View Property"
     },
     {
@@ -29,7 +28,7 @@
       "area": "1,200 sq ft",
       "location": "456 Elm Street, Springfield",
       "facilities": ["living room", "gym", "kitchen", "balcony"],
-      "image": "https://example.com/images/cozy-apartment.jpg",
+      "image": "https://i.ibb.co.com/n0ZTmcq/cozy.jpg",
       "view_property_button": "View Property"
     },
     {
@@ -42,7 +41,7 @@
       "area": "1,800 sq ft",
       "location": "789 Oak Lane, Springfield",
       "facilities": ["living room", "kitchen", "patio", "office space"],
-      "image": "https://example.com/images/spacious-townhouse.jpg",
+      "image": "https://i.ibb.co.com/ZJg8V3g/townhouse.jpg",
       "view_property_button": "View Property"
     },
     {
@@ -55,7 +54,7 @@
       "area": "1,000 sq ft",
       "location": "321 Pine Road, Springfield",
       "facilities": ["living room", "kitchen", "fireplace", "backyard"],
-      "image": "https://example.com/images/charming-cottage.jpg",
+      "image": "https://i.ibb.co.com/vcmCvVH/cottage.jpg",
       "view_property_button": "View Property"
     },
     {
@@ -74,7 +73,7 @@
         "gym",
         "kitchen"
       ],
-      "image": "https://example.com/images/modern-villa.jpg",
+      "image": "https://i.ibb.co.com/b2fXHLr/villa.jpg",
       "view_property_button": "View Property"
     },
     {
@@ -92,7 +91,7 @@
         "laundry room",
         "rooftop terrace"
       ],
-      "image": "https://example.com/images/stylish-loft.jpg",
+      "image": "https://i.ibb.co.com/Gk9vwdb/loft.png",
       "view_property_button": "View Property"
     },
     {
@@ -105,7 +104,7 @@
       "area": "1,200 sq ft",
       "location": "888 Cedar Street, Springfield",
       "facilities": ["living room", "kitchen", "dining area", "porch"],
-      "image": "https://example.com/images/elegant-bungalow.jpg",
+      "image": "https://i.ibb.co.com/cCtYZFY/bungalow.jpg",
       "view_property_button": "View Property"
     },
     {
@@ -123,8 +122,7 @@
         "home office",
         "rooftop garden"
       ],
-      "image": "https://example.com/images/luxury-penthouse.jpg",
+      "image": "https://i.ibb.co.com/PGW3pNT/penthouse.jpg",
       "view_property_button": "View Property"
     }
   ]
-}

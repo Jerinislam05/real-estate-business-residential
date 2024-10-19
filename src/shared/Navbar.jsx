@@ -6,6 +6,8 @@ import userImage from "../../public/assets/user.jpg";
 
 const Navbar = () => {
   const [user] = useAuthState(auth);
+  console.log(user);
+  
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -38,6 +40,17 @@ const Navbar = () => {
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
+        <div className="navbar-start w-16 lg:text-left text-center">
+          <Link to="/" className="inline-block">
+            <img
+              src="https://i.ibb.co/LJhwDM5/logo.jpg"
+              alt="Bhumi Logo"
+              className="w-16 h-16 rounded-full"
+            />
+          </Link>
+        </div>
+
+        <div className="navbar-start lg:hidden">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -64,9 +77,12 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">{navLinks}</ul>
+        <div className="navbar-center hidden lg:flex">
+          <ul className="menu menu-horizontal px-1">{navLinks}</ul>
+        </div>
       </div>
+
+      
 
       <div className="navbar-end">
         {user ? (
