@@ -1,4 +1,3 @@
-
 const PropertyCategories = () => {
   const categories = [
     { type: "Villa", count: 15 },

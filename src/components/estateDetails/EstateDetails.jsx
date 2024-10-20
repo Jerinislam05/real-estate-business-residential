@@ -5,6 +5,15 @@ const EstateDetails = () => {
   const { id } = useParams();
   const [estate, setEstate] = useState(null);
   const [error, setError] = useState(null);
+  const [showModal, setShowModal] = useState(false);
+
+  const handleContactClick = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
 
   useEffect(() => {
     fetch("/data/estates.json")
@@ -12,7 +21,6 @@ const EstateDetails = () => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
-        
         return response.json();
       })
       .then((data) => {
@@ -32,7 +40,6 @@ const EstateDetails = () => {
   }, [id]);
 
   if (error) return <p className="text-center text-red-500">{error}</p>;
-
   if (!estate) return <p className="text-center">Loading...</p>;
 
   return (
@@ -64,22 +71,74 @@ const EstateDetails = () => {
                 <strong>Location:</strong> {estate.location}
               </li>
               <li>
-                <strong>Bedrooms:</strong> {estate.bedrooms}
+                <strong>Facilities:</strong> {estate.facilities}
               </li>
               <li>
-                <strong>Bathrooms:</strong> {estate.bathrooms}
-              </li>
-              <li>
-                <strong>Square Footage:</strong> {estate.square_footage} sqft
+                <strong>Square Footage:</strong> {estate.area} sqft
               </li>
             </ul>
           </div>
 
           <div className="mt-8">
-            <button className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all">
+            <button
+              className="px-6 py-3 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-all"
+              onClick={handleContactClick}
+            >
               Contact Agent
             </button>
           </div>
+
+          {showModal && (
+            <div className="fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center z-50">
+              <div className="relative bg-teal-100 p-8 rounded-lg shadow-2xl w-full max-w-3xl mx-4 sm:mx-auto animate-fadeIn transition-all">
+                <div className="flex justify-between items-center mb-6">
+                  <h2 className="text-2xl font-bold text-teal-900">
+                    Contact Agent
+                  </h2>
+                  <button
+                    onClick={handleCloseModal}
+                    className="text-teal-900 hover:text-orange-500 transition-colors"
+                  >
+                    ✖
+                  </button>
+                </div>
+
+                <div className="flex items-center mb-4">
+                  <img
+                    src={estate.agent.logo}
+                    alt={estate.agent.name}
+                    className="w-20 h-20 rounded-full mr-6 object-cover shadow-lg"
+                  />
+                  <div>
+                    <h3 className="text-lg font-semibold text-teal-900">
+                      {estate.agent.name}
+                    </h3>
+                    <p className="text-teal-900">{estate.agent.role}</p>
+                  </div>
+                </div>
+
+                <div className="text-teal-900">
+                  <ul className="space-y-2">
+                    <li>
+                      <strong>Email:</strong> {estate.agent.email}
+                    </li>
+                    <li>
+                      <strong>Phone:</strong> {estate.agent.phone}
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="mt-8 flex justify-end">
+                  <button
+                    onClick={handleCloseModal}
+                    className="px-4 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-700 transition-all"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>

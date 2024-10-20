@@ -9,7 +9,6 @@ const PropertyList = ({ estates }) => {
             key={estate.id}
             className="card lg:card-side bg-base-100 shadow-xl"
           >
-            
             <figure>
               <img
                 src={estate.image}
@@ -17,8 +16,6 @@ const PropertyList = ({ estates }) => {
                 className="w-full h-48 object-cover"
               />
             </figure>
-
-            
             <div className="card-body">
               <h2 className="card-title">{estate.estate_title}</h2>
               <p>{estate.description}</p>

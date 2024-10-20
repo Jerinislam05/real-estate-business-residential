@@ -1,128 +1,192 @@
 [
-    {
-      "id": "1",
-      "estate_title": "Luxurious Family Home",
-      "segment_name": "Residential",
-      "description": "A beautiful family home located in a quiet neighborhood with modern amenities.",
-      "price": "$850,000",
-      "status": "sale",
-      "area": "2,500 sq ft",
-      "location": "123 Maple Drive, Springfield",
-      "facilities": [
-        "living room",
-        "swimming pool",
-        "kitchen",
-        "garage",
-        "garden"
-      ],
-      "image": "https://i.ibb.co.com/M291RsD/luxurious.jpg",
-      "view_property_button": "View Property"
-    },
-    {
-      "id": "2",
-      "estate_title": "Cozy Apartment",
-      "segment_name": "Residential",
-      "description": "A modern apartment located in the city center, perfect for young professionals.",
-      "price": "$450,000",
-      "status": "sale",
-      "area": "1,200 sq ft",
-      "location": "456 Elm Street, Springfield",
-      "facilities": ["living room", "gym", "kitchen", "balcony"],
-      "image": "https://i.ibb.co.com/n0ZTmcq/cozy.jpg",
-      "view_property_button": "View Property"
-    },
-    {
-      "id": "3",
-      "estate_title": "Spacious Townhouse",
-      "segment_name": "Residential",
-      "description": "A spacious townhouse featuring an open floor plan and close to parks.",
-      "price": "$650,000",
-      "status": "rent",
-      "area": "1,800 sq ft",
-      "location": "789 Oak Lane, Springfield",
-      "facilities": ["living room", "kitchen", "patio", "office space"],
-      "image": "https://i.ibb.co.com/ZJg8V3g/townhouse.jpg",
-      "view_property_button": "View Property"
-    },
-    {
-      "id": "4",
-      "estate_title": "Charming Cottage",
-      "segment_name": "Residential",
-      "description": "A charming cottage nestled in the countryside with stunning views.",
-      "price": "$325,000",
-      "status": "sale",
-      "area": "1,000 sq ft",
-      "location": "321 Pine Road, Springfield",
-      "facilities": ["living room", "kitchen", "fireplace", "backyard"],
-      "image": "https://i.ibb.co.com/vcmCvVH/cottage.jpg",
-      "view_property_button": "View Property"
-    },
-    {
-      "id": "5",
-      "estate_title": "Modern Villa",
-      "segment_name": "Residential",
-      "description": "A luxurious villa with state-of-the-art design and amenities.",
-      "price": "$1,500,000",
-      "status": "sale",
-      "area": "4,000 sq ft",
-      "location": "654 Willow Way, Springfield",
-      "facilities": [
-        "living room",
-        "swimming pool",
-        "home theater",
-        "gym",
-        "kitchen"
-      ],
-      "image": "https://i.ibb.co.com/b2fXHLr/villa.jpg",
-      "view_property_button": "View Property"
-    },
-    {
-      "id": "6",
-      "estate_title": "Stylish Loft",
-      "segment_name": "Residential",
-      "description": "An urban loft featuring high ceilings and contemporary finishes.",
-      "price": "$600,000",
-      "status": "rent",
-      "area": "1,500 sq ft",
-      "location": "222 Birch Avenue, Springfield",
-      "facilities": [
-        "living room",
-        "kitchen",
-        "laundry room",
-        "rooftop terrace"
-      ],
-      "image": "https://i.ibb.co.com/Gk9vwdb/loft.png",
-      "view_property_button": "View Property"
-    },
-    {
-      "id": "7",
-      "estate_title": "Elegant Bungalow",
-      "segment_name": "Residential",
-      "description": "A charming bungalow with vintage touches and a cozy ambiance.",
-      "price": "$425,000",
-      "status": "sale",
-      "area": "1,200 sq ft",
-      "location": "888 Cedar Street, Springfield",
-      "facilities": ["living room", "kitchen", "dining area", "porch"],
-      "image": "https://i.ibb.co.com/cCtYZFY/bungalow.jpg",
-      "view_property_button": "View Property"
-    },
-    {
-      "id": "8",
-      "estate_title": "Luxury Penthouse",
-      "segment_name": "Residential",
-      "description": "A stunning penthouse with panoramic views of the skyline and luxury finishes.",
-      "price": "$2,000,000",
-      "status": "sale",
-      "area": "3,500 sq ft",
-      "location": "777 Skyview Lane, Springfield",
-      "facilities": [
-        "living room",
-        "swimming pool",
-        "home office",
-        "rooftop garden"
-      ],
-      "image": "https://i.ibb.co.com/PGW3pNT/penthouse.jpg",
-      "view_property_button": "View Property"
+  {
+    "id": "1",
+    "estate_title": "Luxurious Family Home",
+    "segment_name": "Residential",
+    "description": "A beautiful family home located in a quiet neighborhood with modern amenities.",
+    "price": "$850,000",
+    "status": "sale",
+    "area": "2,500 sq ft",
+    "location": "123 Maple Drive, Springfield",
+    "facilities": [
+      "living room, ",
+      "swimming pool, ",
+      "kitchen, ",
+      "garage, ",
+      "garden"
+    ],
+    "image": "https://i.ibb.co.com/M291RsD/luxurious.jpg",
+    "view_property_button": "View Property",
+
+    "agent": {
+      "name": "John Doe",
+      "role": "Real Estate Agent",
+      "email": "johndoe@example.com",
+      "phone": "+1 555 123 456",
+      "logo": "https://i.ibb.co.com/LzXQnNQ/4017991.png"
     }
-  ]
+  },
+  {
+    "id": "2",
+    "estate_title": "Cozy Apartment",
+    "segment_name": "Residential",
+    "description": "A modern apartment located in the city center, perfect for young professionals.",
+    "price": "$450,000",
+    "status": "sale",
+    "area": "1,200 sq ft",
+    "location": "456 Elm Street, Springfield",
+    "facilities": ["living room, ", "gym, ", "kitchen, ", "balcony"],
+    "image": "https://i.ibb.co.com/n0ZTmcq/cozy.jpg",
+    "view_property_button": "View Property",
+
+    "agent": {
+      "name": "Sarah Thompson",
+      "role": "Senior Real Estate Consultant",
+      "email": "sarah.thompson@realtyhub.com",
+      "phone": "+1 555 789 654",
+      "logo": "https://i.ibb.co.com/LzXQnNQ/4017991.png"
+    }
+  },
+  {
+    "id": "3",
+    "estate_title": "Spacious Townhouse",
+    "segment_name": "Residential",
+    "description": "A spacious townhouse featuring an open floor plan and close to parks.",
+    "price": "$650,000",
+    "status": "rent",
+    "area": "1,800 sq ft",
+    "location": "789 Oak Lane, Springfield",
+    "facilities": ["living room, ", "kitchen, ", "patio, ", "office space"],
+    "image": "https://i.ibb.co.com/ZJg8V3g/townhouse.jpg",
+    "view_property_button": "View Property",
+
+    "agent": {
+      "name": "Sarah Thompson",
+      "role": "Senior Real Estate Consultant",
+      "email": "sarah.thompson@realtyhub.com",
+      "phone": "+1 555 789 654",
+      "logo": "https://i.ibb.co.com/LzXQnNQ/4017991.png"
+    }
+  },
+  {
+    "id": "4",
+    "estate_title": "Charming Cottage",
+    "segment_name": "Residential",
+    "description": "A charming cottage nestled in the countryside with stunning views.",
+    "price": "$325,000",
+    "status": "sale",
+    "area": "1,000 sq ft",
+    "location": "321 Pine Road, Springfield",
+    "facilities": ["living room, ", "kitchen, ", "fireplace, ", "backyard"],
+    "image": "https://i.ibb.co.com/vcmCvVH/cottage.jpg",
+    "view_property_button": "View Property",
+
+    "agent": {
+      "name": "Lisa White",
+      "role": "Residential Property Specialist",
+      "email": "lisa.white@dreamproperties.com",
+      "phone": "+1 555 432 987",
+      "logo": "https://i.ibb.co.com/LzXQnNQ/4017991.png"
+    }
+  },
+  {
+    "id": "5",
+    "estate_title": "Modern Villa",
+    "segment_name": "Residential",
+    "description": "A luxurious villa with state-of-the-art design and amenities.",
+    "price": "$1,500,000",
+    "status": "sale",
+    "area": "4,000 sq ft",
+    "location": "654 Willow Way, Springfield",
+    "facilities": [
+      "living room, ",
+      "swimming pool, ",
+      "home theater, ",
+      "gym, ",
+      "kitchen"
+    ],
+    "image": "https://i.ibb.co.com/b2fXHLr/villa.jpg",
+    "view_property_button": "View Property",
+    
+    "agent": {
+      "name": "David Lee",
+      "role": "Luxury Home Specialist",
+      "email": "david.lee@exclusiveestates.com",
+      "phone": "+1 555 567 891",
+      "logo": "https://i.ibb.co.com/LzXQnNQ/4017991.png"
+    }
+  },
+  {
+    "id": "6",
+    "estate_title": "Stylish Loft",
+    "segment_name": "Residential",
+    "description": "An urban loft featuring high ceilings and contemporary finishes.",
+    "price": "$600,000",
+    "status": "rent",
+    "area": "1,500 sq ft",
+    "location": "222 Birch Avenue, Springfield",
+    "facilities": [
+      "living room, ",
+      "kitchen, ",
+      "laundry room, ",
+      "rooftop terrace"
+    ],
+    "image": "https://i.ibb.co.com/Gk9vwdb/loft.png",
+    "view_property_button": "View Property",
+
+    "agent": {
+      "name": "Emily Chen",
+      "role": "Commercial Property Expert",
+      "email": "emily.chen@urbanrealty.com",
+      "phone": "+1 555 765 234",
+      "logo": "https://i.ibb.co.com/LzXQnNQ/4017991.png"
+    }
+  },
+  {
+    "id": "7",
+    "estate_title": "Elegant Bungalow",
+    "segment_name": "Residential",
+    "description": "A charming bungalow with vintage touches and a cozy ambiance.",
+    "price": "$425,000",
+    "status": "sale",
+    "area": "1,200 sq ft",
+    "location": "888 Cedar Street, Springfield",
+    "facilities": ["living room, ", "kitchen, ", "dining area, ", "porch"],
+    "image": "https://i.ibb.co.com/cCtYZFY/bungalow.jpg",
+    "view_property_button": "View Property",
+
+    "agent": {
+      "name": "James Carter",
+      "role": "Rural Property Consultant",
+      "email": "james.carter@countrylivingrealty.com",
+      "phone": "+1 555 234 876",
+      "logo": "https://i.ibb.co.com/LzXQnNQ/4017991.png"
+    }
+  },
+  {
+    "id": "8",
+    "estate_title": "Luxury Penthouse",
+    "segment_name": "Residential",
+    "description": "A stunning penthouse with panoramic views of the skyline and luxury finishes.",
+    "price": "$2,000,000",
+    "status": "sale",
+    "area": "3,500 sq ft",
+    "location": "777 Skyview Lane, Springfield",
+    "facilities": [
+      "living room, ",
+      "swimming pool, ",
+      "home office, ",
+      "rooftop garden"
+    ],
+    "image": "https://i.ibb.co.com/PGW3pNT/penthouse.jpg",
+    "view_property_button": "View Property",
+
+    "agent": {
+      "name": "Olivia Martinez",
+      "role": "Real Estate Advisor",
+      "email": "olivia.martinez@urbanliving.com",
+      "phone": "+1 555 987 123",
+      "logo": "https://i.ibb.co.com/LzXQnNQ/4017991.png"
+    }
+  }
+]

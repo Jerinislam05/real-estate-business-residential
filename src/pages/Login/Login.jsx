@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import {
   auth,
   googleProvider,
@@ -8,15 +8,18 @@ import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useState } from "react";
+import { useAuth } from "../../components/authContext/Context";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const { login } = useAuth();
   const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
 
   const handleEmailPasswordLogin = async (e) => {
     e.preventDefault();
-
     const trimmedEmail = email.trim();
     const trimmedPassword = password.trim();
 
@@ -25,8 +28,9 @@ const Login = () => {
 
     try {
       await signInWithEmailAndPassword(auth, trimmedEmail, trimmedPassword);
+      login();
       toast.success("Logged in successfully!");
-      navigate("/");
+      navigate(from);
     } catch (error) {
       console.error("Login Error:", error);
       if (error.code === "auth/invalid-email") {
@@ -44,17 +48,20 @@ const Login = () => {
   const handleGoogleLogin = async () => {
     try {
       await signInWithPopup(auth, googleProvider);
+      login()
       toast.success("Logged in with Google!");
-      navigate("/");
+      navigate(from);
     } catch (error) {
       toast.error("Google login failed: " + error.message);
     }
   };
+
   const handleGithubLogin = async () => {
     try {
       await signInWithPopup(auth, githubProvider);
+      login()
       toast.success("Logged in with GitHub!");
-      navigate("/");
+      navigate(from);
     } catch (error) {
       toast.error("GitHub login failed: " + error.message);
     }
