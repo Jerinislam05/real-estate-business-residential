@@ -6,13 +6,17 @@ import { getAuth, GoogleAuthProvider, GithubAuthProvider } from "firebase/auth";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+
+console.log("inside firebase config", import.meta.env.VITE_PASS);
+
+
 const firebaseConfig = {
-  apiKey: "AIzaSyBLOyfya6ZWJ3FmD2udTTYYg7-gSz_Kz5c",
-  authDomain: "real-estate-residential-7af62.firebaseapp.com",
-  projectId: "real-estate-residential-7af62",
-  storageBucket: "real-estate-residential-7af62.appspot.com",
-  messagingSenderId: "693800909343",
-  appId: "1:693800909343:web:74fd99e876e2be8f20332a"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN ,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID,
 };
 
 // Initialize Firebase
